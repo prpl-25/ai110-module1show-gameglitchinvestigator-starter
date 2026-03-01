@@ -18,7 +18,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
- - I used Claude Code to inspect, debug, and fix this project.
+- I used Claude Code to inspect, debug, and fix this project.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
   - The AI suggested I swap the hints in "check_guess()" for when the guess is lesser than and greater than the secret number to fix the backward hints bug. I verified that the return statements were incorrect and tested the application after the fix to see if it fixed the bug, and it did.
   - Another bug I fixed was the swapped difficulty levels of "hard" and "normal". I interchanged the ranges so "normal" has 1-50 and "hard" has 1-100.
@@ -29,12 +29,13 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
- - Created pytest cases and ran all of them. If all tests passed, the bug is fixed.
+- Created pytest cases and ran all of them. If all tests passed, the bug is fixed.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
- - Ran a test to check if check_guess(40, 50) returns "too low"
+- Ran a test to check if check_guess(40, 50) returns "too low"
 - Did AI help you design or understand any tests? How?
- - Yes, AI helped design the pytest cases and also explain te functionality. It also refactored logic_utils to have all the functions so the pytest cases can be run successfully.
+- Yes, AI helped design the pytest cases and also explain te functionality. It also refactored logic_utils to have all the functions so the pytest cases can be run successfully.
+
 ---
 
 ## 4. What did you learn about Streamlit and state?
@@ -49,9 +50,11 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+  - I would reuse pytest testing and the prompting strategy from this project. My prompts were consice and helped claude give accurate results.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
 
+## TF Summary
 
-## TF hint
-- To help guide students better, I would 
+- This project will teach students to test and debug applications with the help of AI tools like Claude Code, but also unit testing tools like pytest.
+- To guide and help students better, I will prompt them to look into the logic behind the hints, the way the secret number is being generated, and any discrepencies in the UI. I would urge them to trace the functions that guide the logic of these functionalitites rather than accepting all of the AI suggestions.
